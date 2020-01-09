@@ -1,9 +1,13 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:travel_suggestion/home_screen.dart';
 
 
 class NavDrawer extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
+
+    final home = MaterialPageRoute(builder: (context) => NavDrawer());
 
     return Scaffold(
       appBar: AppBar(
@@ -12,13 +16,37 @@ class NavDrawer extends StatelessWidget{
       ),
       drawer: Drawer(
         child: ListView(
-          children: <Widget>[ 
-            UserAccountsDrawerHeader(
-              accountName: Text('Tharoth'),
-              accountEmail: Text('tharoth@gmail.com'),
-              currentAccountPicture: CircleAvatar(
-                child: Image.asset('assets/Tharoth.jpg'),
+          children: <Widget>[   
+            Container(
+              child: DrawerHeader(
+                child: CircleAvatar(
+                  child: Text('T', style: TextStyle(fontSize: 70)),
+                ),
               ),
+              color: Colors.lightGreen,
+            ),
+            
+            ListTile(
+              leading: Icon(Icons.home),
+              title: Text('Home'),
+              onTap: (){
+                Navigator.of(context).push(home);
+              },
+            ),
+
+            ListTile(
+              leading: Icon(Icons.star),
+              title: Text('Popular Place'),
+            ),
+
+            ListTile(
+              leading: Icon(Icons.map),
+              title:  Text('Map'),
+            ),
+
+            ListTile(
+              leading: Icon(Icons.info),
+              title: Text('About us'),
             ),
 
           ],
