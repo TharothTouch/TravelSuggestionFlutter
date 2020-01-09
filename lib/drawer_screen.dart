@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:travel_suggestion/home_screen.dart';
+import 'package:travel_suggestion/popularPlace_screen.dart';
 
 
 class NavDrawer extends StatelessWidget{
@@ -8,7 +9,7 @@ class NavDrawer extends StatelessWidget{
   Widget build(BuildContext context) {
 
     final home = MaterialPageRoute(builder: (context) => NavDrawer());
-
+    final popularPlace = MaterialPageRoute(builder: (context)=> PopularPlace());
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.lightGreen,
@@ -37,6 +38,9 @@ class NavDrawer extends StatelessWidget{
             ListTile(
               leading: Icon(Icons.star),
               title: Text('Popular Place'),
+              onTap: (){
+                Navigator.of(context).push(popularPlace);
+              },
             ),
 
             ListTile(
