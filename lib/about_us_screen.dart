@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 
 class Aboutus extends StatelessWidget{
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context){
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
         title: Text('About us'),
-        backgroundColor: Colors.lightGreen,
+        backgroundColor: Colors.purple[300],
         
       ),
     );

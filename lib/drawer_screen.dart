@@ -5,6 +5,7 @@ import 'package:travel_suggestion/map_screen.dart';
 import 'package:travel_suggestion/popular_place_screen.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
+
 class NavDrawer extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -23,6 +24,8 @@ class NavDrawer extends StatelessWidget{
     final sr = Image.asset('assets/siemreap.jpg');
     final pvh = Image.asset('assets/preahvihear.jpg');
     final ilm = Image.asset('assets/ilovemondulkiri.jpeg');
+    
+ 
 
     final imageSliders = CarouselSlider(
       height: 400,
@@ -38,7 +41,7 @@ class NavDrawer extends StatelessWidget{
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.lightGreen,
+        backgroundColor: Colors.purple[300],
         title: Text('Home'),
       ),
       drawer: Drawer(
@@ -50,7 +53,7 @@ class NavDrawer extends StatelessWidget{
                   child: Text('T', style: TextStyle(fontSize: 70)),
                 ),
               ),
-              color: Colors.lightGreen,
+              color: Colors.purple[300],
             ),
             ListTile(
               leading: Icon(Icons.home),
