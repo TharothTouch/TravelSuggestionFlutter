@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "844256254577",
+    "firebase_url": "https://travel-suggestion-55377.firebaseio.com",
+    "project_id": "travel-suggestion-55377",
+    "storage_bucket": "travel-suggestion-55377.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844256254577:android:7a5fcfd24d619cb409d9d0",
+        "android_client_info": {
+          "package_name": "com.example.travel_suggestion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844256254577-kabdg5i6tspdf4462rn47nv7k2re0nut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSFdm1hFAum2VrSHh8dii9UzqPkh1tLRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844256254577-kabdg5i6tspdf4462rn47nv7k2re0nut.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

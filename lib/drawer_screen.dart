@@ -5,7 +5,6 @@ import 'package:travel_suggestion/map_screen.dart';
 import 'package:travel_suggestion/popular_place_screen.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
-
 class NavDrawer extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -14,7 +13,7 @@ class NavDrawer extends StatelessWidget{
     final home = MaterialPageRoute(builder: (context) => NavDrawer());
     final popularPlace = MaterialPageRoute(builder: (context)=> PopularPlace());
     final mapTSP = MaterialPageRoute(builder: (context) => MapTSP());
-    final aboutus = MaterialPageRoute(builder: (context)=> Aboutus());
+    final aboutus = MaterialPageRoute(builder: (context)=> AboutUs());
 
     // Widget imageSlider(String image){
     //   return Image.asset('/assets');
@@ -38,6 +37,7 @@ class NavDrawer extends StatelessWidget{
       autoPlay: true,
       autoPlayInterval: Duration(seconds: 2),
     );
+
 
     return Scaffold(
       appBar: AppBar(

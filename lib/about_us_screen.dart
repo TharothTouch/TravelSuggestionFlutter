@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Aboutus extends StatelessWidget{
+class AboutUs extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     // TODO: implement build
