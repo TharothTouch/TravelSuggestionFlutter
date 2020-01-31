@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_suggestion/drawer_screen.dart';
+import 'package:travel_suggestion/login_screen.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -7,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: NavDrawer(),
+      home: LoginScreen(),
     );
   }
 }

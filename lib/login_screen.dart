@@ -10,7 +10,7 @@ class LoginScreen extends StatelessWidget{
     final welcomeText = Center(
       heightFactor: 5,
       child: Text('Welcome',
-      style: TextStyle(fontSize: 30, color: Colors.white),),
+      style: TextStyle(fontSize: 30, color: Colors.black),),
     );
 
     final name = TextField(
@@ -67,14 +67,14 @@ class LoginScreen extends StatelessWidget{
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.lightGreen,
+        backgroundColor: Colors.purple[300],
         title: Text('Login'),
       ),
 
       body: Stack(
         children: <Widget>[
           Center(
-            child: Image.asset('assets/bayon.png',
+            child: Image.asset('assets/background.jpeg',
               width: size.width,
               height: size.height,
               fit: BoxFit.fill,
